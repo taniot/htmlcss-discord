@@ -277,6 +277,13 @@ main .section .call-to-action {
   margin-top: 40px;
 }
 
+main .section .call-to-action h3 {
+  background-image: url('../img/stars.svg');
+  padding: 35px;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
 /*
 ************
 Footer
@@ -328,10 +335,7 @@ footer .footer-top .col-small .social ul {
 footer .footer-top .col-big {
   width: 70%;
   display: flex;
-}
-
-footer .footer-top .col-big .col {
-  flex-grow: 1;
+  justify-content: space-between;
 }
 
 footer .footer-top .col-big .col li h5 {
@@ -350,6 +354,7 @@ footer .footer-top .col-big .col li {
 footer .footer-bottom {
   margin-top: 20px;
   padding: 15px 0;
+  border-top: 1px solid #4f5d8c;
 }
 
 footer .footer-bottom .row {
@@ -357,5 +362,16 @@ footer .footer-bottom .row {
 }
 
 footer .footer-bottom .col {
-  padding: 10px;
+  padding: 10px 0;
+}
+
+.wave {
+  height: 100px;
+  fill: green;
+  background-image: url('../img/wave.svg');
+  opacity: 0.04;
+}
+
+.wave.reverse {
+  transform: rotateX(0.5turn);
 }
