@@ -260,6 +260,8 @@ main .section .col-small {
 
 main .section .col-full {
   flex-grow: 1;
+  text-align: center;
+  padding: 0 70px;
 }
 
 main .section img {
