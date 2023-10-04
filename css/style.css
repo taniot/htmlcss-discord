@@ -6,7 +6,7 @@ Reset
 
 :root {
   --bg-topbar: #255ee9;
-  --bg-section: #d3d3d3;
+  --bg-section: #f6f6f6;
   --bg-footer: #23272a;
 }
 
@@ -242,10 +242,10 @@ Main
 */
 
 main .section {
-  padding: 50px;
+  padding: 100px 50px;
 }
 
-main .section:nth-child(even) {
+main :nth-child(even of .section) {
   background-color: var(--bg-section);
 }
 
@@ -255,10 +255,15 @@ main .section .col-big {
 
 main .section .col-small {
   width: 40%;
+  padding: 40px 80px;
 }
 
 main .section .col-full {
   flex-grow: 1;
+}
+
+main .section img {
+  width: 100%;
 }
 
 /*
