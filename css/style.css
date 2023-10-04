@@ -334,6 +334,17 @@ footer .footer-top .col-big .col {
   flex-grow: 1;
 }
 
+footer .footer-top .col-big .col li h5 {
+  color: #7289da;
+  font-size: 15px;
+}
+
+footer .footer-top .col-big .col li {
+  color: white;
+  margin: 10px 0;
+  font-size: 14px;
+}
+
 /* footer bottom */
 
 footer .footer-bottom {
