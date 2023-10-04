@@ -1,0 +1,261 @@
+/*
+************
+Reset
+************
+*/
+
+:root {
+  --bg-topbar: #255ee9;
+  --bg-section: #d3d3d3;
+  --bg-footer: #23272a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*
+************
+Debug
+classi precedute da .debug per la gestione degli spazi
+************
+*/
+
+/* bordi debug */
+
+.debug header .top-menu > *,
+.debug header .jumbotron .content,
+.debug main .section .row > div,
+.debug main .section .row-big > div,
+.debug footer .row > div {
+  border: 2px dashed black;
+}
+
+.debug header {
+  border-bottom: 4px solid var(--bg-topbar);
+}
+
+.debug header .top-menu {
+  background-color: #daa520;
+}
+
+.debug header .jumbotron {
+  background-color: #00008b;
+}
+
+.debug header .jumbotron .content {
+  height: 415px;
+  background-color: #ee82ee;
+}
+
+.debug main .section.small .row {
+  height: 525px;
+}
+
+.debug main .section .row .col-big {
+  background-color: #1e90ff;
+}
+
+.debug main .section .row .col-small {
+  background-color: #ffc0cb;
+}
+
+.debug main .section.large .col-full {
+  background-color: #228b22;
+  height: 940px;
+}
+
+.debug footer .footer-top .row {
+  height: 600px;
+}
+
+.debug footer .row .col-big .col {
+  border: 2px dashed white;
+}
+
+.debug footer .footer-top .col-small {
+  background-color: #f08080;
+}
+.debug footer .footer-top .col-big {
+  background-color: #20b2aa;
+}
+
+.debug footer .footer-bottom {
+  background-color: #7fffd4;
+}
+
+.debug footer .footer-bottom .row .col {
+  background-color: #ffb6c1;
+}
+
+/*
+************
+Common
+************
+*/
+
+.container {
+  margin: 0 auto;
+}
+
+.container.big {
+  max-width: 1250px;
+}
+
+.container.medium {
+  max-width: 950px;
+}
+
+.row {
+  display: flex;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.btn {
+  display: inline-block;
+  background-color: white;
+  padding: 10px 15px;
+  color: black;
+  border-radius: 20px;
+  font-size: 13px;
+}
+
+/*
+************
+Typography
+************
+*/
+
+body {
+  font-family: Whitney, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 18px;
+}
+
+/*
+************
+Header
+************
+*/
+
+/* topbar */
+
+header .topbar {
+  background-color: var(--bg-topbar);
+  padding: 15px;
+}
+
+header .top-menu {
+  display: flex;
+  align-items: center;
+}
+
+header #logo {
+  display: block;
+}
+
+header .top-menu .header-logo,
+header .top-menu .header-login {
+  width: 20%;
+}
+
+header .top-menu .header-link {
+  width: 60%;
+  text-align: center;
+}
+
+header .top-menu .header-link .main-menu {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  font-size: 14px;
+}
+
+header .top-menu .header-login {
+  text-align: right;
+}
+
+/* jumbotron */
+
+header .jumbotron {
+  padding: 50px;
+}
+
+/*
+************
+Main
+************
+*/
+
+main .section {
+  padding: 50px;
+}
+
+main .section:nth-child(even) {
+  background-color: var(--bg-section);
+}
+
+main .section .col-big {
+  width: 60%;
+}
+
+main .section .col-small {
+  width: 40%;
+}
+
+main .section .col-full {
+  flex-grow: 1;
+}
+
+/*
+************
+Footer
+************
+*/
+
+footer {
+  background-color: var(--bg-footer);
+  padding-top: 10px;
+}
+
+/* footer top */
+
+footer .footer-top {
+  margin-bottom: 40px;
+}
+
+footer .footer-top .col-small {
+  width: 30%;
+}
+footer .footer-top .col-big {
+  width: 70%;
+  display: flex;
+}
+
+footer .footer-top .col-big .col {
+  flex-grow: 1;
+}
+
+/* footer bottom */
+
+footer .footer-bottom {
+  margin-top: 20px;
+  padding: 15px 0;
+}
+
+footer .footer-bottom .row {
+  justify-content: space-between;
+}
+
+footer .footer-bottom .col {
+  padding: 10px;
+}
