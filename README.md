@@ -1,3 +1,3 @@
 # Struttura Discord
 
-Realizzazione del layout a blocchi della struttura del sito Discord.
+Realizzazione del layout Discord partendo dalla struttura base
